@@ -15,15 +15,65 @@
 	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
+	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="vendors/js/select2.js"></script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<title>Finsave</title>
+<!-- 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 
 </head>
 
 <body>
+
+		<!-- Popups -->
+
+		<div class="popup_wrapp scroll" data-popup = "popup_1">
+			<button type="button" class="close-popup">
+				<span></span>
+				<span></span>
+			</button>
+			<div class="popup">
+				<h2>Как получить скидку по ОСАГО?</h2>
+				<p>При расчете стоимости ОСАГО одним из основных параметров является КБМ, который может быть снижен, что позволит Вам получить скидку на полис до 50%.</p>
+				<div class="form_wrapp">
+					<form>
+						<div class="two-cols_form offset-ziro">
+							<div class="col">
+								<input type="text" name="-" placeholder="Фамилия Имя Отчество">
+							</div>
+							<div class="col">
+								<input type="tel" name="-" placeholder="+7 (___) ___ - __ - __">
+							</div>
+						</div>
+						<h3>Прикрепите фото ваших прав</h3>
+						<div class="two-cols_form offset-ziro">
+							<div class="col">
+								<div class="upload-file">
+									<input type="file" name="-" id="file_1">
+									<label for="file_1">
+									<!-- <img src="img/logo.png" alt="" /> -->
+									</label>
+								</div>
+							</div>
+							<div class="col">
+								<div class="upload-file">
+									<input type="file" name="-" id="file_2">
+									<label for="file_2"></label>
+								</div>
+							</div>
+						</div>
+						<div class="submit_wrapp">
+							<button type="submit" class="green-pill">Получить скмдку на ОСАГО</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- /Popups -->
+
 
 	<div class="wrapper">
 
@@ -64,7 +114,7 @@
 					<div class="row">
 						<h1>Онлайн расчет и заказ полиса ОСАГО</h1>
 						<div class="white-box">
-							<form method="post" action="">
+							<form method="post" action="-">
 								<div class="two-cols clearfix">
 									<div class="col col-1 left">
 										<div class="select_wrapp">
@@ -156,9 +206,9 @@
 									<div class="inner-col inner-col-2 right">
 										<div class="inner-col_2-col">
 											<p class="green">Со скидкой: 12 000 р.</p>
-										</div class="inner-col_2-col">
+										</div>
 										<div class="inner-col_2-col">
-											<button type="submit" class="transparent-pill">Получить скидку</button>
+											<button type="submit" class="transparent-pill show_popup" data-popup-name = "popup_1">Получить скидку</button>
 										</div>
 									</div>
 								</div>

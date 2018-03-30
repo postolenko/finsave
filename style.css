@@ -350,19 +350,45 @@ label {
 }
 
 input {
-
-}
-
-input:focus {
-
+    display: block;
+    height: 42px;
+    width: 100%;
+    background-color: #eef8f2;
+    border: 1px solid transparent;
+    padding: 10px 32px;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    border-radius: 21px;
+    font-family: "Open Sans", "Arial", "Verdana", sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: normal;
+    color: #65746c;
 }
 
 textarea {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background-color: #eef8f2;
+    border: 1px solid transparent;
+    padding: 12px 32px;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    border-radius: 21px;
+    font-family: "Open Sans", "Arial", "Verdana", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #65746c;
+}
 
+input:focus {
+    border: 1px solid #3cb45a;
 }
 
 textarea:focus {
-
+    border: 1px solid #3cb45a;
 }
 
 /*-------------------------------------------*/
@@ -896,3 +922,211 @@ textarea:focus {
 .footer {
 
 }
+
+/*-- Popups --*/
+
+.popup_wrapp {
+    display: none;
+    /*display: block;*/
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.popup {
+    background: #ffffff;
+    max-width: 680px;
+    margin: 70px auto 20px auto;
+    padding: 43px 3% 26px 3%;
+    border: 1px solid #d3e0da;
+}
+
+.popup h2 {
+    padding: 14px 0;
+    text-align: center;
+    font-size: 36px;
+    line-height: 49px;
+    font-weight: 600;
+    color: #45554d;
+}
+
+.popup h3 {
+    padding: 12px 0 0 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 600;
+    color: #45554d;
+}
+
+.popup p {
+    padding: 14px 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #45554d;
+}
+
+.two-cols_form {
+    padding: 10px 0 20px 0;
+}
+
+.two-cols_form .col {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    margin: 15px 0;
+}
+
+.two-cols_form .col:nth-child(odd) {
+    padding-right: 3%;
+}
+
+.two-cols_form .col:nth-child(even) {
+    padding-left: 3%;
+}
+
+.upload-file {
+    position: relative;
+}
+
+.upload-file input {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.upload-file label {
+    display: block;
+    height: 160px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #eef8f2;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    border-radius: 21px;
+    position: relative;
+    z-index: 2;
+}
+
+.upload-file label:before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    background-image: url(img/plus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #3bb359;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.upload-file label img {
+    display: block;
+    width: auto;
+    height: auto;
+    z-index: 3;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.popup .submit_wrapp {
+    margin: 4px 0 21px 0;
+}
+
+/*---- Responsive Menu Button ------ */
+
+.close-popup {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45px;
+    height: 37px;
+    background: transparent;
+    cursor: pointer;
+    z-index: 11;
+    position: fixed;
+    top: 10px;
+    right: 1%;
+    border: 1px solid transparent;
+}
+
+.close-popup span {
+    display: block;
+    width: 41px;
+    height: 2px;
+    background: #ffffff;
+    position: relative;
+    top: -2px;
+    left: 1px;
+
+    -webkit-transition-property: transform, border, background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform, border, background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform, border, background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform, border, background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform, border, background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.close-popup:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-tap-highlight-color: transparent;
+}
+
+.close-popup span:first-child {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    top: 0;
+    left: 2px;
+}
+
+.close-popup span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* ----- / Responsive Menu Button ------ */
+
+/*-- /Popups --*/
+
+
