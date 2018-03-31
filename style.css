@@ -782,6 +782,7 @@ textarea:focus {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #000;
 }
 
 .promo .row {
