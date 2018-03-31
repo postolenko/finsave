@@ -33,6 +33,7 @@
 	.two-cols-inner .inner-col {
 	    padding-top: 1px;
 	    padding-bottom: 1px;
+	    float: none;
 	}
 
 	.two-cols-inner .inner-col-1 {
@@ -46,6 +47,10 @@
 	    width: 100%;
 	    padding-left: 0;
 	    text-align: center;
+	}
+
+	.inner-col_2-col {
+	    margin: 0 12px;
 	}
 
 	/*-- /Section 1 - Main Page --*/
