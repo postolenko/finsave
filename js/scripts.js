@@ -5,6 +5,8 @@ g = d.getElementsByTagName('body')[0],
 bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 var parentBlock;
+var popupName;
+var popupBlock;
 
 $(window).load(function() {
 
@@ -75,7 +77,7 @@ $(document).ready(function() {
 
         $(document).mouseup(function (e){
 
-            hide_element = $('.popup');
+            var hide_element = $('.popup');
 
             if (!hide_element.is(e.target)
 
