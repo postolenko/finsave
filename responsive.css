@@ -153,7 +153,7 @@
 
 	.popup {
 	    margin: 70px 2%;
-	    padding: 26px 10px;
+	    padding: 26px 3%;
 	}
 
 	.popup h2 {
@@ -176,8 +176,8 @@
 	}
 
 	.succes-footer {
-	    padding-left: 10px;
-	    padding-right: 10px;
+	    padding-left: 3%;
+	    padding-right: 3%;
 	}
 
 	/*-- /Popup --*/
@@ -327,6 +327,10 @@
 	/*-- /Header --*/
 
 	/*-- Popup --*/
+
+	.popup {
+	    padding: 26px 10px;
+	}
 	
 	.two-cols_form .col {
 	    width: 100%;
@@ -348,6 +352,11 @@
 	.submit_wrapp_2 .transparent-pill,
 	.submit_wrapp_2 .green-pill {
 	    min-width: 100%;
+	}
+
+	.succes-footer {
+	    padding-left: 10px;
+	    padding-right: 10px;
 	}
 
 	.succes-footer button,
