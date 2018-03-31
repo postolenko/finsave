@@ -64,7 +64,7 @@ $(document).ready(function() {
 
         });
 
-        $(".close-popup").click(function() {
+        $(".close-popup, .close-popup_2").click(function() {
 
             popupBlock = $(this).closest(".popup_wrapp");
 
