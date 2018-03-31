@@ -334,7 +334,7 @@ input {
     width: 100%;
     background-color: #eef8f2;
     border: 1px solid transparent;
-    padding: 10px 32px;
+    padding: 0 32px
     -webkit-border-radius: 21px;
     -moz-border-radius: 21px;
     border-radius: 21px;
