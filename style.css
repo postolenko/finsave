@@ -1210,15 +1210,23 @@ textarea:focus {
 
 .two-cols_form_2 h3 {
     text-align: left;
-    padding: 0 0 15px 0;
+    padding: 16px 0 0px 0;
 }
 
 .two-cols_form .checkbox {
     margin: 22px 0;
 }
 
-.two-cols_form > .col .checkbox:last-child {
-    margin-bottom: 4px;
+.two-cols_form_3 {
+    padding-bottom: 12px;
+}
+
+.two-cols_form_3 .col {
+    margin: 0 !important;
+}
+
+.two-cols_form_3 .col .checkbox:last-child {
+    margin-bottom: 1px !important;
 }
 
 .form_inner {
