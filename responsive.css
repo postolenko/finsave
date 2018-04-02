@@ -176,6 +176,10 @@
 	    padding: 10px 0 15px 0;
 	}
 
+	.two-cols_form_2 {
+	    padding: 0;
+	}
+
 	.succes-popup {
 	    min-height: auto;
 	}
